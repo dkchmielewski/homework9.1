@@ -1,7 +1,9 @@
 public class AirConditioner {
-    Room room;
 
-    public AirConditioner(Room room) {
-        this.room = room;
+    public void cool(Room room) {
+        if (room.temp > 20) {
+            room.temp -= 1/room.size;
+        }
     }
+
 }
