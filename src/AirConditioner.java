@@ -1,11 +1,5 @@
-public class AirConditioner {
+public abstract class AirConditioner {
 
-    public void cool(Room room) {
-        final int ROOMTEMP = 20;
-        final int TEMPCOOL = 2;
-        if (room.temp > ROOMTEMP) {
-            room.temp -= TEMPCOOL/room.size;
-        }
-    }
+    public abstract void cool(Room room);
 
 }
